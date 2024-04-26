@@ -1,0 +1,21 @@
+
+nav {
+    position: fixed;
+    width: 96%;
+    padding: 1.8vmax;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.431);
+    z-index: 999;
+    left: 0;
+    top: 0;
+
+}
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-items {
+    gap: 20px;
+  }
+  

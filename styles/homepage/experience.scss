@@ -1,0 +1,38 @@
+.experience-main-container {
+    min-width:100%;
+    padding: 25px;
+    // @media screen and (min-width:280px) and (max-width:600px){
+    //     flex-direction: column-reverse;
+    // }
+    .content {
+        padding:15px;
+        
+    }
+    .image-holder{
+        padding:40px;
+        display:flex;
+        justify-content: center;
+        @media screen and (min-width:280px) and (max-width:600px){
+            padding:15px;
+        }
+        img{
+            width:100%;
+            height:81%;
+            filter: opacity(0.8);
+            @media screen and (min-width:280px) and (max-width:600px){
+                width:100% !important;
+                height:100% !important;
+            }
+        }
+    }
+}
+@font-face{
+    src: url('../../public/fonts/goatham65.woff2');
+    font-family: 'goatham65';
+    
+}
+h1{
+    font-family: goatham65;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}

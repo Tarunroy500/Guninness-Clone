@@ -1,0 +1,169 @@
+@font-face{
+    src: url('../public/fonts/goatham65.woff2');
+    font-family: 'goatham65';
+    
+}
+body {
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.z-index {
+    z-index: -1;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.background-black {
+    background-color: black;
+    opacity: 1;
+}
+
+h1 {
+    margin: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.ant-btn {
+    padding: 0px !important;
+}
+img{
+    object-fit: cover;
+}
+.heading {
+    font-size: 77px;
+    line-height: 80px;
+    letter-spacing: 1.632px;
+    color: white;
+    font-family: goatham65;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 40px;
+    max-width: 687px;
+
+
+    @media screen and (min-width:280px) and (max-width:600px) {
+        font-size: 30px !important;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: normal;
+    }
+}
+
+.p-content {
+    
+        font-size: 16px;
+        /* line-height: 24px; */
+        /* letter-spacing: 2.4px; */
+        font-family: goatham65;
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 20px;
+        max-width: 355px;
+        padding: 7px 8px;
+    
+    
+
+    @media screen and (min-width:280px) and (max-width:100px) {
+        font-size: 12px !important;
+        margin-bottom: 15px;
+        max-width: 511px;
+    }
+}
+
+.ant-btn-default {
+    background-color: black;
+    border: none;
+}
+.w-100 {
+    width: 93% !important;
+}
+
+.find-out-btn {
+    background: black !important;
+    color: #a09829 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    height: 54px !important;
+    width: 168px;
+    margin-bottom: 20px !important;
+    font-family: sans-serif !important;
+    background: transparent !important;
+    border: none !important;
+    text-transform: capitalize !important;
+
+    &:hover {
+        font-size: 22px;
+        color: #c0b62d !important;
+        background: black !important;
+        border: none !important;
+    }
+
+    @media screen and (min-width:280px) and (max-width:600px) {
+        font-size: 15px !important;
+    }
+}
+
+.margin-b160 {
+    margin-bottom: 160px;
+
+    @media screen and (min-width:280px) and (max-width:600px) {
+        margin-bottom: 40px !important;
+    }
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.padding-15 {
+    padding: 15px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+
+    @media screen and (min-width:280px) and (max-width:600px) {
+        margin-bottom: 0px !important;
+    }
+
+}
+
+.p15-left {
+    @media screen and (min-width:280px) and (max-width:600px) {
+        padding-left: 15px !important;
+    }
+}

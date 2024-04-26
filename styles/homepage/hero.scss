@@ -1,0 +1,129 @@
+@font-face {
+  src: url('../../public/fonts/knock.woff2');
+  font-family: 'knockout47';
+}
+
+// video {
+//   width: 100%;
+//   object-fit: cover;
+// }
+
+// .overlay {
+//   position: absolute;
+//   bottom: 3vmax;
+//   height: 100vh;
+//   width: 74vw;
+//   background: linear-gradient(transparent, rgba(0, 0, 0, 0.274));
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: end;
+//   padding: 2vmax 6vmax;
+//   color: white;
+// }
+
+// .home {
+//   width: 100vw;
+//   min-height: 56vh;
+//   position: relative; /* Ensure proper positioning of the video and overlay */
+// }
+
+// .overlay h1 {
+//   width: 64%;
+//   font-size: 3.4vmax;
+//   font-family: knockout47;
+// }
+
+// .overlay h2 {
+//   margin-top: 1vmax;
+//   font-size: 2.3vmax;
+//   font-family: knockout47;
+// }
+
+// .overlay h1 {
+//   word-spacing: 7px;
+//   letter-spacing: 4px;
+// }
+@media (max-width: 768px) {
+//   .home {
+//     width: 100vw;
+//     min-height: 44vh;
+//     position: relative;
+// }
+// .overlay {
+//   position: absolute;
+//   bottom: 5vmax;
+//   height: 100vh;
+//   /* width: 72vmax; */
+//   background: linear-gradient(transparent, rgba(0, 0, 0, 0.274));
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: end;
+//   padding: 2vmax 6vmax;
+//   color: white;
+// }
+// .overlay h2 {
+//   margin-top: 1vmax;
+//   font-size: 1.8vmax;
+//   font-family: knockout47;
+// }
+// .overlay h1 {
+//   word-spacing: 0px;
+//   letter-spacing: 2px;
+//   font-size: 2.4vmax;
+//     font-family: knockout47;
+// }
+// .overlay  {
+//   width: 0;
+//   font-size: 5vmax;
+// }
+video {
+  /* width: 100%; */
+  object-fit: cover;
+  height: 100%;
+}
+.overlay h1 {
+  width: 0;
+  font-size: 3vmax;
+}
+h2{
+  margin-top: 1vmax;
+  font-size: 1.2vmax;
+  color: white;
+
+}
+}
+
+
+
+
+video {
+  width: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  max-width: 88%;
+  background: linear-gradient(transparent, black);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 2vmax 6vmax;
+}
+.overlay h1 {
+  width: 79%;
+  font-size: 4.2vmax;
+}
+h2 {
+  margin-top: 1vmax;
+  font-size: 2.3vmax;
+  color: white;
+}
+.home {
+  width: 100vw;
+  min-height: 56vh;
+  position: relative;
+}
+
+

@@ -1,0 +1,26 @@
+.homepage-subscribe {
+    display: flex;
+    justify-content: center;
+    .content-holder {
+        transform: translate(10%, 130%) !important;
+
+        .text {
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: normal;
+            color: white;
+        }
+    }
+
+    .image-holder {
+        width: 100% !important;
+        img {
+            height: 400px;
+            width: 100%;
+            @media screen and (min-width:280px) and (max-width:600px) {
+                height:400px !important;
+                width:100%;
+            }
+        }
+    }
+}
