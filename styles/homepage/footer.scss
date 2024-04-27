@@ -41,6 +41,9 @@ footer {
     font-size: 0.67rem;
     display: flex;
     gap: 2vmax;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vmax;
   }
   hr {
     margin: 3vmax 0 4vmax 0;
@@ -54,7 +57,7 @@ footer {
   }
   .btm-cnt {
     display: flex;
-    gap: 1.5vmax;
+    gap: 16.9vmax;
   }
   .img-cnt {
     display: flex;
@@ -70,7 +73,7 @@ footer {
   .plus{
     display: none;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 816px) {
     .foot-top {
       flex-direction: column;
     }
@@ -92,4 +95,12 @@ footer {
     .plus{
       display: initial;
     }
+  }
+  @media screen and (max-width: 1422px) {
+   .cnt{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+   }
   }

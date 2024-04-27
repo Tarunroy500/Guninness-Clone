@@ -5,19 +5,19 @@ import SubscribeImage from '../../public/assests/homepage/subscribe.avif';
 
 const Subscribe = () => {
     return (
-        <Row className='homepage-subscribe w-100 margin-b160'>
-            <Col lg={24} className='content-holder p15-left' >
+        <Row className='homepage-subscribe relative'>
+            <Col lg={24} className='content-holder p15-left absolute' >
                 <p className='p-content' >SUBSCRIBE</p>
                 <div>
-                    <p className='p-content'>
+                    <p className='content'>
                         KEEP UPDATED WITH ALL THINGS GUINNESS
                     </p>
                 </div>
-                <Button className='find-out-btn'>
+                <Button className='subscribe-button'>
                     SIGN UP
                 </Button>
             </Col>
-            <Col lg={24} className='image-holder '>
+            <Col lg={24} className='image-holder'>
                 <Image
                     src={SubscribeImage}
                     alt='subscribe-image'

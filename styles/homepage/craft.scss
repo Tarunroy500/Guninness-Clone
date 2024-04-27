@@ -1,6 +1,9 @@
 .homepage-craft-main {
     min-width: 100%;
     margin:auto;
+    @media screen and (min-width:900px) and (max-width:1440px){
+        padding:40px;
+    }
     .image-holder {
         margin: auto;
         width: 100%;
@@ -15,9 +18,51 @@
 
     .content-holder {
         .content-row {
-            transform: translate(7%, -40%);
+            transform: translate(10%, -38%);
             @media screen and (min-width:280px) and (max-width:600px){
-                transform : translate(0,-14%);
+                transform : translate(0,-28%);
+            }
+            .craft-heading{
+                    font-size: 77px;
+                    line-height: 80px;
+                    letter-spacing: 1.632px;
+                    color: white;
+                    font-family: goatham65;
+                    font-style: normal;
+                    font-weight: 400;
+                    margin-bottom: 40px;
+                    max-width: 687px;
+                
+                
+                    @media screen and (min-width:280px) and (max-width:600px) {
+                        font-size: 30px !important;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                        line-height: normal;
+                        padding-left:20px;
+                    }
+                
+                    @media screen and (min-width:601px) and (max-width:899px){
+                        font-size: 40px;
+                        line-height: 40px;
+                    }
+                
+                    @media screen and (min-width:900px) and (max-width:1250px){
+                        font-size:50px;
+                        line-height: 60px;
+                    }
+            }
+            .head{
+                @media screen and (min-width:280px) and (max-width:600px){
+                    padding-left:20px;
+                    color:white;
+                }
+            }
+            .move-content{
+                margin-left:20px;
+                @media screen and (min-width:280px) and (max-width:600px){
+                    margin-left:0;
+                }
             }
         }
 

@@ -24,11 +24,11 @@ body {
 }
 
 .absolute {
-    position: absolute;
+    position: absolute !important;
 }
 
 .relative {
-    position: relative;
+    position: relative !important;
 }
 
 .background-black {
@@ -68,27 +68,42 @@ img{
         margin-bottom: 20px;
         line-height: normal;
     }
+
+    @media screen and (min-width:601px) and (max-width:899px){
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    @media screen and (min-width:900px) and (max-width:1250px){
+        font-size:50px;
+        line-height: 60px;
+    }
 }
 
 .p-content {
+    font-size: 18px;
+    /* line-height: 24px; */
+    /* letter-spacing: 2.4px; */
+    font-family: goatham65;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+    max-width: 355px;
+    padding: 7px 8px;
     
-        font-size: 16px;
-        /* line-height: 24px; */
-        /* letter-spacing: 2.4px; */
-        font-family: goatham65;
-        font-style: normal;
-        font-weight: 400;
-        color: white;
-        margin-bottom: 20px;
-        max-width: 355px;
-        padding: 7px 8px;
-    
-    
-
-    @media screen and (min-width:280px) and (max-width:100px) {
+    @media screen and (min-width:280px) and (max-width:600px) {
         font-size: 12px !important;
         margin-bottom: 15px;
         max-width: 511px;
+    }
+
+    @media screen and (min-width:601px) and (max-width:899px){
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:900px) and (max-width:1250px){
+        font-size:16px;
     }
 }
 
@@ -103,7 +118,7 @@ img{
 .find-out-btn {
     background: black !important;
     color: #a09829 !important;
-    font-size: 20px !important;
+    font-size: 20px;
     font-weight: 700 !important;
     height: 54px !important;
     width: 168px;
@@ -114,14 +129,16 @@ img{
     text-transform: capitalize !important;
 
     &:hover {
-        font-size: 22px;
-        color: #c0b62d !important;
-        background: black !important;
+        color: white!important;
         border: none !important;
     }
 
     @media screen and (min-width:280px) and (max-width:600px) {
         font-size: 15px !important;
+    }
+
+    @media screen and (min-width:900px) and (max-width:1250px){
+        font-size:18px;
     }
 }
 
@@ -155,9 +172,10 @@ img{
 
 .mb-80 {
     margin-bottom: 80px;
-
+    background-color: black;
     @media screen and (min-width:280px) and (max-width:600px) {
         margin-bottom: 0px !important;
+        background-color: black;
     }
 
 }
@@ -166,4 +184,8 @@ img{
     @media screen and (min-width:280px) and (max-width:600px) {
         padding-left: 15px !important;
     }
+}
+
+.p-80{
+    padding-bottom:80px;
 }

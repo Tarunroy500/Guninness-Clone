@@ -16,9 +16,9 @@ const HomePageCraft = () => {
                 />
             </Col>
             <Col className='content-holder d-flex' lg={24} >
-                <Row className='d-flex space-around w-100 content-row'>
+                <Row className='d-flex space-between w-100 content-row'>
                     <Col lg={14}>
-                        <h1 className='heading'>&nbsp; &nbsp;THE STORY OF <br />GUINNESS</h1>
+                        <h1 className='craft-heading'><span className='move-content'></span>THE STORY OF <br />GUINNESS</h1>
                     </Col>
 
                     <Col lg={7} className='para d-flex justify-center flex-column'>
