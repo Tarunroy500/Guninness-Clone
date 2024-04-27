@@ -76,10 +76,11 @@ const carousel = () => {
     setActiveIndex(swiper.activeIndex);
     // console.log(swiper.realIndex);
     setRealIndex(swiper.realIndex);
-    // console.log(RealIndex);
+    console.log(RealIndex);
   };
   useEffect(() => {
     // console.log(RealIndex);
+    
   }, [RealIndex]);
   return (
     <>
@@ -118,8 +119,8 @@ const carousel = () => {
               <img src={elem.url} alt="" />
             </div>
             <p>{elem.head}</p>
-            <div className={(RealIndex-1 === index) ? "overlay-2" : ""}>
-              {console.log(activeIndex)}
+            <div className={(RealIndex-1 === index)  ? "overlay-2" : ""}>
+              
               
              {RealIndex-1===index ?(
               <>

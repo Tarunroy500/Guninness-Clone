@@ -1,8 +1,18 @@
 .homepage-craft-main {
     min-width: 100%;
     margin:auto;
-    @media screen and (min-width:900px) and (max-width:1440px){
+    max-height: 135vh;
+    
+    @media screen and (min-width:899px) and (max-width:1440px){
         padding:40px;
+        max-height: 156vh;
+        
+    }
+    @media screen and  (max-width:768px){
+        max-height: 133vh;
+    }
+    @media screen and (min-width:280px) and (max-width:600px){
+        max-height: 106vh;
     }
     .image-holder {
         margin: auto;

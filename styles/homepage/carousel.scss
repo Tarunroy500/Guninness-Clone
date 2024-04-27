@@ -75,17 +75,19 @@ gap: 2vmax;
 padding: 1vmax;
 }
 .black-content button {
-color: #B97A27;
-background: transparent;
-background: none;
-border: none;
-outline: none;
-box-shadow: none;
-font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: #B97A27;
+  background: transparent;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 1rem;
+  font-weight: 800;
 }
 .buttons{
-display:  flex;
-gap: 1vmax;
+  display:  flex;
+  gap: 1vmax;
 }
 
 
@@ -163,10 +165,17 @@ top: 78% !important;
 font-size: x-large !important;
 text-transform: none !important;
 }
+@media (min-width:234px) and (max-width: 768px) {
+  .swiper-wrapper{
+    margin-left: 226px !important;
+  }
+  .overlay-2 {
+    top: 23.8vmax !important;
+}
 
 
 
-@media only screen and (max-width: 1000px) {
+
 .container {
   width: 100%;
   height: 29rem;
@@ -213,7 +222,7 @@ font-size: 0.68rem;
 
 }
 .overlay-2{
-  top: 38.8vmax;
+  top: 24.8vmax;
 
 }
 .black-content{
@@ -221,7 +230,72 @@ font-size: 0.68rem;
   top: -7px;
 }
 .black-content h3{
+font-size: 0.7rem;
+
+}
+button{
 font-size: 0.8rem;
+}
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1000px) {
+.container {
+  width: 100%;
+  height: 29rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important; 
+}
+.swiper-slide p {
+  display: none;
+}
+.swiper-wrapper {
+  display: flex;
+  
+  margin-left: 114px;
+  gap: 3vmax;
+}
+.swiper-slide-prev img {
+transform: none;
+}
+.swiper-slide img {
+display: block;
+width: 114%;
+object-fit: cover;
+}
+.overlay-2 h2 {
+font-size: 3vmax;
+width: 42%;
+}
+.overlay-2 h1{
+font-size: 0.9rem;
+
+}
+.black-content button {
+font-size: 0.68rem;
+
+}
+.overlay-2{
+  top: 24.8vmax;
+
+}
+.black-content{
+  position: relative;
+  top: -7px;
+}
+.black-content h3{
+font-size: 0.7rem;
 
 }
 button{

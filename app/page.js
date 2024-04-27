@@ -30,7 +30,7 @@ const HomePage = () => {
             </Row>
         </div>
                 <Row>
-                <Footer/>
+                    <Footer/>
                 </Row>
         </>
     )
