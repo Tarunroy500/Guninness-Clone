@@ -74,14 +74,51 @@ const carousel = () => {
   ]);
   const handleSlideChange = (swiper) => {
     setActiveIndex(swiper.activeIndex);
-    // console.log(swiper.realIndex);
     setRealIndex(swiper.realIndex);
-    console.log(RealIndex);
   };
   useEffect(() => {
-    // console.log(RealIndex);
-    
-  }, [RealIndex]);
+    if (RealIndex === 0) {
+      const activeSlide = document.querySelector(".swiper-slide-prev");
+      if (activeSlide) {
+        const overlay = document.createElement("div");
+        overlay.className = "overlay-2";
+
+        const carouselContent = document.createElement("div");
+        carouselContent.className = "carousel-content";
+        carouselContent.innerHTML = `
+          <h1>${data[7].tag}</h1>
+          <h2>${data[7].head}</h2>
+        `;
+
+        const blackContent = document.createElement("div");
+        blackContent.className = "black-content";
+
+        const h3 = document.createElement("h3");
+        h3.textContent = data[7].desc;
+
+        const buttons = document.createElement("div");
+        buttons.className = "buttons";
+
+        const viewBeerButton = document.createElement("button");
+        viewBeerButton.textContent = "View this Beer";
+
+        const allBeersButton = document.createElement("button");
+        allBeersButton.textContent = "All Beers";
+
+        buttons.appendChild(viewBeerButton);
+        buttons.appendChild(allBeersButton);
+
+        blackContent.appendChild(h3);
+        blackContent.appendChild(buttons);
+
+        overlay.appendChild(carouselContent);
+        overlay.appendChild(blackContent);
+
+        activeSlide.appendChild(overlay);
+      }
+    }
+  }, [RealIndex, data]);
+
   return (
     <>
       <div className="p-content">&nbsp; &nbsp; &nbsp; OUR BEERS</div>

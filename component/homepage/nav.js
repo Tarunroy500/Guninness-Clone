@@ -1,8 +1,19 @@
-import React from "react";
+"use client"
+import {React,useState} from "react";
 import apple_icon from "../../public/assests/homepage/apple-icon.png";
 const nav = () => {
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   return (
-    <nav class="flex">
+    <nav class={navbar ? 'flex active' : "flex"}>
       <div class="logo">
         <svg
           fill="none"
